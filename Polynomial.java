@@ -18,13 +18,10 @@ public class Polynomial {
         
         for (int i = 0; i < greatestnum; i++) {
             if (i < Math.min(num1, num2)) {
-                // Add corresponding coefficients
                 resultantarr[i] = coeffi[i] + coeff2.coeffi[i];
             } else if (i >= num2) {
-                // If coeff2 is shorter, take the remaining from this
                 resultantarr[i] = coeffi[i];
             } else if (i >= num1) {
-                // If this is shorter, take the remaining from coeff2
                 resultantarr[i] = coeff2.coeffi[i];
             }
         }
