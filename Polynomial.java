@@ -31,10 +31,11 @@ public class Polynomial {
         return new Polynomial(resultantarr);
     }
 
-    public double evaluate(double x1) {
+    public double evaluate(double x) {
         double rel = 0;
         for (int i = 0; i < coeffi.length; i++) {
-            rel = rel + (coeffi[i] * Math.pow(x1, i));
+	    double rw = Math.pow(x, i);
+            rel = rel + (coeffi[i] * rw);
         }
         return rel;
     }
