@@ -36,9 +36,8 @@ public class Polynomial {
         }
         return rel;
     }
-
-    // Example implementation of hasRoot method (modify as per your requirement)
-    public boolean hasRoot(double root) {
-        return evaluate(root) == 0;
+    
+    public boolean hasRoot(double root1) {
+        return evaluate(root1) == 0;
     }
 }
