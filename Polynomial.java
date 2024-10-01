@@ -21,8 +21,10 @@ public class Polynomial {
         double[] sizedrecoeff = new double[size11];
         int[] sizedreexpo = new int[size11];
 
-        System.arraycopy(coeffi, 0, sizedrecoeff, 0, size11);
-        System.arraycopy(exponential1, 0, sizedreexpo, 0, size11);
+        for (int w = 0; w < size11; w++) {
+        	sizedrecoeff[w] = coeffi[w];
+        	sizedreexpo[w] = exponential1[w];
+    	}	
 
         coeffi = sizedrecoeff;
         exponential1 = sizedreexpo;
