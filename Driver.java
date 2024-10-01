@@ -45,23 +45,23 @@ public class Driver {
             System.out.println(tstroot + " is not a root of equation");
         }
 
-        File file2 = new File("polynomial.txt");
+        File file2 = new File("poly10.txt");
         if (file2.exists()) {
             try {
                 Polynomial pfile1 = new Polynomial(file2);
                 System.out.println("pfile1(3) = " + pfile1.evaluate(3));
             } catch (IOException e) {
-                System.err.println("An error occurred while reading from the file: " + e.getMessage());
+                System.err.println("The problem occurred: " + e.getMessage());
             }
         } else {
-            System.out.println("file polynomial.txt is not present.");
+            System.out.println("file poly10.txt is not present there.");
         }
 
         try {
             sum1.saveToFile("addition_out.txt");
-            System.out.println("polynomial sum has saved to addition_out.txt");
+            System.out.println("The polynomial addition has saved to addition_out.txt");
         } catch (IOException e1) {
-            System.err.println("An error occurred : " + e1.getMessage());
+            System.err.println("The problem just occured: " + e1.getMessage());
         }
     }
 }
